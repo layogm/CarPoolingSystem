@@ -1,0 +1,183 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".Home" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Pooling System"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#990000"
+        android:textStyle="bold|italic" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="5dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="125" >
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/etUsername_Login"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="15dp"
+            android:layout_weight="15"
+            android:ems="10"
+            android:hint="University Registration Number"
+            />
+
+        <EditText
+            android:id="@+id/etPassword_Login"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="15dp"
+            android:layout_weight="15"
+            android:ems="10"
+            android:hint="Password"
+            android:password="true"
+            />
+
+        <CheckBox
+            android:id="@+id/cbRememberd"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="10"
+            android:text="Remember"
+            android:textColor="#994030" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="20" >
+
+            <LinearLayout
+                android:id="@+id/bLogin_Login"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:background="@drawable/custom_buttons2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="#FFFFFF"
+                android:weightSum="10" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/signin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Sign in"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bRegister_Login"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:background="@drawable/custom_buttons2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="#FFFFFF"
+                android:weightSum="10" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/signup" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Sign up"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="35"
+            android:orientation="horizontal" 
+            android:weightSum="20"
+            android:gravity="center_horizontal"
+  >
+
+           <LinearLayout
+                android:id="@+id/bForgotPass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:background="@drawable/custom_buttons2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="#FFFFFF"
+                android:weightSum="10" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/forgotpassword" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Forgot Password?"
+                    android:textColor="#000000" />
+            </LinearLayout>
+            
+           
+        </LinearLayout>
+         <TextView
+                  android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+ android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Note:\nPrefered Time to select source - \nTravellers : 08:00PM-09:00PM \nOwner : 09:00PM-10:00PM"
+                    android:textColor="#000000" />
+            
+    </LinearLayout>
+
+</LinearLayout>

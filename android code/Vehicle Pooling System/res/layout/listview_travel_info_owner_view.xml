@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:divider="#111111"
+        android:dividerPadding="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:showDividers="beginning|end" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10" >
+
+            <TextView
+                android:id="@+id/tvHead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Traveller Info"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#424242" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#444444" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"   
+            android:weightSum="10"
+            >t
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:text="Name : "
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            <TextView
+                android:id="@+id/tvNameOwnerInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:text="Name1"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="0dp"
+                android:gravity="center_vertical|left"
+                android:text="Email : "
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            <TextView
+                android:id="@+id/tvEmailOwnerInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:gravity="center_vertical|left"
+                android:text="mail@gmail.com"
+                android:inputType="textEmailAddress"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            <ImageButton
+                android:id="@+id/bEmail"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_buttons2"
+                android:scaleType="fitCenter"
+                android:src="@drawable/email" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10" >
+
+            <TextView
+                android:layout_width="wrap_content"  
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:text="Phone : "
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            <TextView
+                android:id="@+id/tvPhoneOwnerInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:gravity="center_vertical|left"
+                android:text="9999999999"
+                android:inputType="phone"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            <ImageButton
+                android:id="@+id/bCall"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_buttons2"
+                android:scaleType="fitCenter"
+                android:src="@drawable/phone"
+                android:text="Button" />
+
+            <ImageButton
+                android:id="@+id/bMsg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_buttons2"
+                android:scaleType="fitCenter"
+                android:src="@drawable/message"
+                android:text="Button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:text="Meeting \nPoint : "
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            <TextView
+                android:id="@+id/tvMeetingPointOwnerInfo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6.5"
+                android:gravity="center_vertical|left"
+                android:text="Meeting Point"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10" >
+
+            <TextView
+                android:layout_width="wrap_content"  
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:text="Time  :  "
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            <TextView
+                android:id="@+id/tvTimeOwnerInfo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6.5"
+                android:gravity="center_vertical|left"
+                android:text="Time"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+        </LinearLayout>
+        
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10" >
+
+            <TextView
+                android:layout_width="wrap_content"  
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:text="Fare\nShare : "
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            <TextView
+                android:id="@+id/tvFareOwnerInfo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6.5"
+                android:gravity="center_vertical|left"
+                android:text="Rs.Fare"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        >
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="0dp"
+        android:layout_weight="7"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Select\nTravellers"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#595040"
+        android:textStyle="bold|italic" />
+    
+    <LinearLayout 
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_buttons2"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:weightSum="4"
+        android:id="@+id/bConfirm"
+        >
+    <ImageView 
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/confirm"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:gravity="center_horizontal"
+        android:scaleType="fitCenter"
+        />
+    </LinearLayout>
+</LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#000000" />
+
+
+        <ListView
+            android:id="@+id/lvSelectTraveller"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_margin="10dp"
+        />
+
+
+</LinearLayout>
